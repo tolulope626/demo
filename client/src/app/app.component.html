@@ -1,0 +1,12 @@
+<h1>{{title}}</h1>
+<!-- list of users --> 
+<ul>
+    <!-- creates a list of users using angular ngFor
+         that iterartes over each item in a collection
+    -->
+    <li *ngFor="let user of users">
+        <!-- .NET uses pascal case but json uses camelcase. Beware of case sensitivity-->
+        {{user.id}} - {{user.userName}}
+
+    </li>
+</ul>
